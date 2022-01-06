@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Sample REST Callout" icon-name="custom:custom63">
+        <div class="slds-var-m-around_medium">
+            <p class="slds-var-m-bottom_small">
+                <lightning-button
+                    label="Perform REST Callout"
+                    onclick={buttonClick}
+                ></lightning-button>
+            </p>
+            <template if:true={sessionId}>
+                <span>Session Id: {sessionId}</span>
+            </template>
+        </div>
+    </lightning-card>
+</template>
